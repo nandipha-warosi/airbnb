@@ -1,0 +1,192 @@
+.create-listing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 20px;
+  height: 100vh; /* Full height of viewport */
+  max-width: 1200px; /* Limit maximum width */
+  margin: 0 auto; /* Center horizontally */
+
+}
+
+.create-listing-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.create-listing-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+  border-radius: 8px;
+ 
+}
+
+ label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4153f5;
+  text-align: left;
+}
+
+.left-column {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.right-column {
+  height: auto;
+  justify-content: flex-start;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-end; /* Ensure items start at the top of the column */
+}
+
+.left-column input,
+.right-column input {
+  width: 100%; /* Adjust width as needed */
+  height: 55px;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 2px solid black;
+  border-radius: 7px;
+  box-sizing: border-box;
+  resize: none !important;
+}
+
+.left-column textarea {
+  width: 100%;
+  min-height: 100px;
+  height: auto; /* Adjust height as needed */
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 2px solid black;
+  border-radius: 7px;
+  box-sizing: border-box;
+  resize: none; /* Prevent vertical resizing */
+}
+
+.form-selections {
+  display: flex;
+}
+
+.right-column .input-label {
+  width: 62px;
+  height: 55px;
+  border: 2px solid black;
+  border-radius: 7px;
+  margin-right: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  margin-bottom: 15px;
+}
+.right-column .input-type {
+  width: 219px;
+  height: 55px;
+  border: 2px solid black;
+  border-radius: 7px;
+}
+
+.right-column .amenities input {
+  width: 381px;
+  height: 55px;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 2px solid black;
+  border-radius: 7px;
+}
+
+.left-column input,
+.left-column textarea {
+  width: 381px;
+  height: 55px;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 2px solid black;
+  border-radius: 7px;
+  box-sizing: border-box;
+}
+
+.left-column textarea {
+  resize: vertical;
+}
+
+.bottom-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+}
+
+.bottom-form textarea {
+border: 2px solid black;
+border-radius: 7px;
+margin-bottom: 50px;
+}
+
+.images-button {
+    width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+width:277px;
+height: 55px;
+  padding: 10px 20px;
+  background-color: #4153F5;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+button.cancel-button {
+    width:277px;
+    height: 55px;
+  background-color: #CC2D4A;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  border-radius: 7px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.listing-buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.amenities {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 15px;
+}
